@@ -40,7 +40,7 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
 
-    <Buttonn
+    <Button
         android:id="@+id/button2"
         android:layout_width="146dp"
         android:layout_height="111dp"
