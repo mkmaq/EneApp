@@ -3,5 +3,6 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-
+    <string name="top">TOP</string>
+    <string name="osirase">お知らせ</string>
 </resources>
