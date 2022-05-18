@@ -9,23 +9,23 @@
         android:id="@+id/navigation_top"
         android:name="com.example.eneapp.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_top" />
 
     <fragment
         android:id="@+id/navigation_electricity"
         android:name="com.example.eneapp.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_electricty" />
 
     <fragment
         android:id="@+id/navigation_coin"
-        android:name="com.example.eneapp.ui.notifications.NotificationsFragment"
+        android:name="com.example.eneapp.ui.coin.CoinFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_coin" />
 
     <fragment
         android:id="@+id/navigation_sonota"
-        android:name="com.example.eneapp.ui.coin.CoinFragment"
+        android:name="com.example.eneapp.ui.sonota.SonotaFragment"
         android:label="その他"
-        android:layout="@layout/fragment_coin" />
+        android:layout="@layout/fragment_sonota" />
 </navigation>

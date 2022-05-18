@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--黄色うすめ-->
     <color name="purple_200">#FFEB3B</color>
+<!--黄色普通-->
     <color name="purple_500">#FFC107</color>
+<!--    ほぼオレンジ-->
     <color name="purple_700">#FF9800</color>
+
+
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>

@@ -10,7 +10,7 @@ public class CoinViewModel extends ViewModel {
 
     public CoinViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+//        mText.setValue("This is notifications fragment");
     }
 
     public LiveData<String> getText() {
