@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fadeScrollbars="false"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
     tools:context=".ui.dashboard.DashboardFragment">
 
     <EditText
@@ -106,29 +110,54 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="342dp"
-        android:layout_height="48dp"
+        android:layout_width="379dp"
+        android:layout_height="62dp"
         android:text="今日の発電量：4000kw"
-        android:textSize="26dp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/text_dashboard"
-        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.097" />
+        app:layout_constraintVertical_bias="0.043" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="349dp"
-        android:layout_height="44dp"
-        android:text="余剰発電量:100kw"
-        android:textSize="26dp"
+        android:layout_width="402dp"
+        android:layout_height="64dp"
+        android:text="今日の使用電力量:3900kw"
+        android:textSize="34dp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.222" />
+        app:layout_constraintVertical_bias="0.178" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="353dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="200dp"
+        android:text="売買可能量:100kw"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="137dp"
+        android:layout_height="42dp"
+        android:text="Switch"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="710dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
