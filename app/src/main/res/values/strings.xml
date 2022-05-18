@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">EneApp</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Top</string>
+    <string name="title_dashboard">Electricity</string>
+    <string name="title_notifications">Coin</string>
     <string name="top">TOP</string>
     <string name="osirase">お知らせ</string>
 </resources>
