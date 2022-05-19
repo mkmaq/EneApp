@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "751231358061",
+    "firebase_url": "https://j3-product-default-rtdb.firebaseio.com",
+    "project_id": "j3-product",
+    "storage_bucket": "j3-product.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751231358061:android:462cfb870aec8a5698db64",
+        "android_client_info": {
+          "package_name": "com.example.eneapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751231358061-7k1k4b4c3tb6v5c7bqg9qvf1moigd707.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYIMsYBR13YJ6BW_Ei49dFs_G2RoobPEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751231358061-7k1k4b4c3tb6v5c7bqg9qvf1moigd707.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
