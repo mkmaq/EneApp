@@ -202,4 +202,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.187" />
 
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="129dp"
+        android:layout_height="87dp"
+        android:src="@drawable/koukoku"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
