@@ -40,7 +40,7 @@
             app:layout_constraintHorizontal_bias="0.578"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_sonota"
-            app:layout_constraintVertical_bias="0.085" />
+            app:layout_constraintVertical_bias="0.035" />
 
         <TextView
             android:id="@+id/textView9"
@@ -53,7 +53,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.075" />
+            app:layout_constraintVertical_bias="0.039" />
+
 
         <ImageView
             android:id="@+id/imageView4"
@@ -64,18 +65,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView9"
-            app:layout_constraintVertical_bias="0.138" />
-
+            app:layout_constraintVertical_bias="0.057" />
 
         <TextView
             android:id="@+id/MyAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="76dp"
             android:text="マイアカウント"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.11"
+            app:layout_constraintHorizontal_bias="0.08"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Tuuchi" />
 
@@ -84,12 +84,12 @@
             android:id="@+id/Tuuchi"
             android:layout_width="229dp"
             android:layout_height="43dp"
+            android:layout_marginTop="36dp"
             android:text="通知"
             android:textSize="30sp"
-            app:layout_constraintBottom_toTopOf="@+id/MyAccount"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
