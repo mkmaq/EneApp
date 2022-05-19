@@ -43,6 +43,7 @@
         android:layout_height="57dp"
         android:layout_marginStart="16dp"
         android:text="SELL"
+        app:iconTint="#03A9F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.064"
@@ -151,13 +152,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.246" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="137dp"
-        android:layout_height="42dp"
-        android:text="Switch"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="710dp" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
