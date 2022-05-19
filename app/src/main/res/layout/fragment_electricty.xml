@@ -10,6 +10,8 @@
     android:scrollbarAlwaysDrawVerticalTrack="false"
     tools:context=".ui.dashboard.DashboardFragment"
     android:paddingTop="?attr/actionBarSize">
+
+
     <EditText
         android:id="@+id/buynumber2"
         android:layout_width="119dp"
