@@ -10,20 +10,20 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="60dp"
-        android:paddingTop="?attr/actionBarSize"
+        android:paddingBottom="80dp"
+        android:paddingTop="10dp"
         tools:context=".ui.coin.CoinFragment">
+        <!--    ?attr/actionBarSize-->
 
         <TextView
             android:id="@+id/text_sonota"
             android:layout_width="329dp"
             android:layout_height="45dp"
-            android:layout_marginStart="1dp"
             android:text="@string/tenkiyoho"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.445"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,6 +32,7 @@
             android:layout_width="329dp"
             android:layout_height="45dp"
             android:text="ニュース"
+            android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -40,18 +41,18 @@
             app:layout_constraintTop_toBottomOf="@+id/imageWeather"
             app:layout_constraintVertical_bias="0.039" />
 
+
         <ImageView
             android:id="@+id/imageWeather"
-            android:layout_width="373dp"
-            android:layout_height="190dp"
-            android:src="@drawable/tenki"
+            android:layout_width="377dp"
+            android:layout_height="309dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_ytenki"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.578"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_sonota"
-            app:layout_constraintVertical_bias="0.035" />
-
+            app:layout_constraintTop_toBottomOf="@id/text_sonota"
+            app:layout_constraintVertical_bias="0.016" />
 
         <ImageView
             android:id="@+id/imageNews"
@@ -70,25 +71,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
+            android:layout_marginBottom="30dp"
             android:text="マイアカウント"
+            android:textColor="@color/black"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.185"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Tuuchi" />
+            app:layout_constraintTop_toBottomOf="@+id/Tuuchi"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/Tuuchi"
             android:layout_width="229dp"
             android:layout_height="43dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="20dp"
             android:text="通知"
+            android:textColor="@color/black"
             android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.203"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageNews" />
+            app:layout_constraintTop_toBottomOf="@+id/imageNews"
+            app:layout_constraintVertical_bias="0.11" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
