@@ -14,6 +14,7 @@ public class MyValueEventListener implements ValueEventListener {
     }
 
 
+
     public void onCancelled( DatabaseError error) {
         System.out.println("データの受信をキャンセルしました"+error.toString());
     }
