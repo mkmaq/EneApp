@@ -13,7 +13,7 @@
 
 
     <EditText
-        android:id="@+id/buynumber2"
+        android:id="@+id/buynumber"
         android:layout_width="119dp"
         android:layout_height="40dp"
         android:ems="10"
@@ -40,7 +40,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonchangemessage"
+        android:id="@+id/sell1"
         android:layout_width="137dp"
         android:layout_height="57dp"
         android:layout_marginStart="16dp"
@@ -61,7 +61,7 @@
         app:layout_constraintGuide_begin="20dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buy1"
         android:layout_width="138dp"
         android:layout_height="53dp"
         android:backgroundTint="#E91E63"
@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.632" />
 
     <EditText
-        android:id="@+id/sellnumber"
+        android:id="@+id/buy2"
         android:layout_width="130dp"
         android:layout_height="40dp"
         android:ems="10"

@@ -4,6 +4,8 @@ import android.util.Log;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 
@@ -20,4 +22,6 @@ public class MyValueEventListener implements ValueEventListener {
     public void onCancelled( DatabaseError error) {
         System.out.println("データの受信をキャンセルしました"+error.toString());
     }
+
+    DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
 }
