@@ -1,6 +1,5 @@
 package com.example.eneapp.ui.coin;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,6 +15,10 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.eneapp.MainActivity;
 import com.example.eneapp.R;
 import com.example.eneapp.databinding.FragmentCoinBinding;
+import com.example.eneapp.ui.coin.result.Result100Activity;
+import com.example.eneapp.ui.coin.result.Result10Activity;
+import com.example.eneapp.ui.coin.result.Result50Activity;
+import com.example.eneapp.ui.coin.result.ResultActivity;
 
 
 public class CoinFragment extends Fragment {
@@ -40,12 +43,34 @@ public class CoinFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // クリック時の処理
-                Intent intent = new Intent(getActivity(),MainActivity.class);
+                Intent intent = new Intent(getActivity(), ResultActivity.class);
                 startActivity(intent);
             }
         });
+
+        Button button3 =root.findViewById(R.id.button3);
+        root.findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // クリック時の処理
+                Intent intent = new Intent(getActivity(), Result10Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button4 =root.findViewById(R.id.button4);
+        root.findViewById(R.id.button4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // クリック時の処理
+                Intent intent = new Intent(getActivity(), Result50Activity.class);
+                startActivity(intent);
+            }
+        });
+
+
         sendButton.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), MainActivity.class);
+            Intent intent = new Intent(getActivity(), Result100Activity.class);
             startActivity(intent);
         });
         return root;

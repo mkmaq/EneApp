@@ -14,7 +14,19 @@
         android:theme="@style/Theme.EneApp"
         tools:targetApi="31">
         <activity
-            android:name=".result_layout"
+            android:name=".ui.dashboard.electricitysellbuy.ElectricitySellActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.coin.result.Result100Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.coin.result.Result50Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.coin.result.Result10Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.coin.result.ResultActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
