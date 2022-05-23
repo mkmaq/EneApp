@@ -253,16 +253,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.658" />
 
-    <Button
-        android:id="@+id/backtomain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="戻る"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/text_coin"
-        app:layout_constraintHorizontal_bias="0.922"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.797" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

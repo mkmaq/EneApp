@@ -2,7 +2,9 @@ package com.example.eneapp.ui.dashboard.electricitysellbuy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.example.eneapp.R;
 
@@ -12,5 +14,12 @@ public class ElectricitySellActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_electricity_sell);
+
+        Intent intent = this.getIntent();
+        String text = intent.getStringExtra("buynumber");
+        TextView textView = (TextView)this.findViewById(R.id.textView11);
+        textView.setText(text);
+
+
     }
 }

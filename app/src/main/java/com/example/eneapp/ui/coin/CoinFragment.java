@@ -70,8 +70,6 @@ public class CoinFragment extends Fragment {
         });
 
 
-
-
         sendButton.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), Result100Activity.class);
             startActivity(intent);

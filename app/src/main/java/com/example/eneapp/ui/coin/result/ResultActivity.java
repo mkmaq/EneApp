@@ -29,6 +29,18 @@ public class ResultActivity extends AppCompatActivity {
         });
 
 
+        Button sendButton1 =findViewById(R.id.button2);
+        // lambda式
+        Intent intent1 = new Intent(this, MainActivity.class);
+        sendButton1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // クリック時の処理
+
+                startActivity(intent1);
+            }
+        });
+
+
 
 
     }
