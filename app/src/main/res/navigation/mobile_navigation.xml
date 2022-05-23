@@ -19,13 +19,14 @@
 
     <fragment
         android:id="@+id/navigation_coin"
-        android:name="com.example.eneapp.ui.coin.CoinFragment"
+        android:name="com.example.eneapp.ui.ui.login.LoginFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_coin" />
+        tools:layout="@layout/fragment_login" />
 
     <fragment
         android:id="@+id/navigation_sonota"
         android:name="com.example.eneapp.ui.sonota.SonotaFragment"
         android:label="その他"
         android:layout="@layout/fragment_sonota" />
+
 </navigation>
