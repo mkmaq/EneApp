@@ -1,6 +1,9 @@
 package com.example.eneapp.ui.dashboard;
 
+import static android.content.ContentValues.TAG;
+
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +16,13 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.eneapp.databinding.FragmentElectrictyBinding;
 
 import com.example.eneapp.databinding.FragmentElectrictyBinding;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.HashMap;
 
 public class DashboardFragment extends Fragment {
 
@@ -25,6 +35,42 @@ public class DashboardFragment extends Fragment {
 
         binding = FragmentElectrictyBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference();
+
+        myRef.child("storage_battery").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // This method is called once with the initial value and again
+                // whenever data at this location is updated.
+                HashMap value = (HashMap) dataSnapshot.getValue();
+                Log.d(TAG, "Value is: " + value);
+
+                long souhatuden = (long) value.get("souhatuden");
+                long syouhi = (long) value.get("syouhi");
+                long yojo = (long) value.get("yojo");
+
+                //↑テキストビューに入れる
+
+//                TextView souhatudenNum1 = binding.souhatuden2;
+//                souhatudenNum1.setText(value.get("souhatuden") + " kWh");
+//
+//                TextView syouhi1 = binding.syouhi2;
+//                syouhi1.setText(value.get("syouhi") + " kWh");
+
+                TextView yojo1 = binding.yojo2;
+                yojo1.setText(value.get("yojo") + " kWh");
+
+            }
+
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                Log.w(TAG, "Failed to read value.", error.toException());
+            }
+        });
 
         final TextView textView = binding.textDashboard;
         dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
