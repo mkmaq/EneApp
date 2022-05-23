@@ -4,52 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="?attr/actionBarSize"
+    android:paddingTop="10dp"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
         android:id="@+id/text_home"
-        android:layout_width="3dp"
-        android:layout_height="3dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.444" />
 
     <TextView
-        android:id="@+id/abcd"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/souhatudenStr"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:text="総発電力量"
+        android:textColor="@color/black"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="327dp"
-        android:layout_height="161dp"
-        android:src="@drawable/topele"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/souhatuden1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/souhatudenStr"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/syouhiStr"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="消費電力量"
+        android:textColor="@color/black"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/souhatuden1" />
+
+    <TextView
+        android:id="@+id/syouhi1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/syouhiStr"
+        app:layout_constraintTop_toBottomOf="@+id/souhatuden1" />
+
+    <TextView
+        android:id="@+id/yojoStr"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="余剰電力量"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/syouhi1" />
+
+    <TextView
+        android:id="@+id/yojo1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/yojoStr"
+        app:layout_constraintTop_toBottomOf="@+id/syouhi1" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="351dp"
         android:layout_height="225dp"
+        android:layout_marginTop="20dp"
         android:background="#FFFFFF"
         android:src="@drawable/tyato"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintTop_toBottomOf="@+id/yojo1" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
