@@ -15,7 +15,6 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.eneapp.R;
 import com.example.eneapp.databinding.FragmentTopBinding;
-//import com.example.eneapp.databinding.FragmentElectrictyBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,7 +27,6 @@ import java.util.HashMap;
 public class HomeFragment extends Fragment {
 
     private FragmentTopBinding binding;
-//    private FragmentElectrictyBinding binding2;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -43,7 +41,6 @@ public class HomeFragment extends Fragment {
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference();
-        DatabaseReference ma = database.getReference();
 
 
         myRef.child("message").setValue("Hello, World",null);
@@ -55,12 +52,6 @@ public class HomeFragment extends Fragment {
                 // whenever data at this location is updated.
                 String value = dataSnapshot.getValue(String.class);
                 Log.d(TAG, "Value is: " + value);
-
-//                TextView text = binding.abcd;
-//                text.setText(value);
-
-                DataSnapshot batte = dataSnapshot.child(String.valueOf("storage_battery"));
-
             }
 
 
@@ -71,8 +62,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        myRef.child("storage_battery");
-        myRef.addValueEventListener(new ValueEventListener() {
+        myRef.child("storage_battery").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
@@ -89,19 +79,11 @@ public class HomeFragment extends Fragment {
                 TextView souhatudenNum1 = binding.souhatuden1;
                 souhatudenNum1.setText(value.get("souhatuden") + " kWh");
 
-//                TextView souhatudenNum2 = binding.sou
-////                TextView souhatudenNum2 = (TextView) findViewById(R.id.souhatuden2);
-//                souhatudenNum2.setText(value.get("souhatuden") + " kWh");
-
                 TextView syouhi1 = binding.syouhi1;
                 syouhi1.setText(value.get("syouhi") + " kWh");
 
                 TextView yojo1 = binding.yojo1;
                 yojo1.setText(value.get("yojo") + " kWh");
-
-//                TextView text = binding.abcd;
-//                text.setText(value + "");
-
 
             }
 
