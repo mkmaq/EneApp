@@ -80,9 +80,9 @@ public class HomeFragment extends Fragment {
                 HashMap value = (HashMap) dataSnapshot.getValue();
                 Log.d(TAG, "Value is: " + value);
 
-                long souhatuden = (long) value.get("souhatuden");
-                long syouhi = (long) value.get("syouhi");
-                long yojo = (long) value.get("yojo");
+//                long souhatuden = (long) value.get("souhatuden");
+//                long syouhi = (long) value.get("syouhi");
+//                long yojo = (long) value.get("yojo");
 
                 //↑テキストビューに入れる
 

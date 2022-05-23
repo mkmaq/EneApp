@@ -15,6 +15,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.eneapp.MainActivity;
 import com.example.eneapp.R;
 import com.example.eneapp.databinding.FragmentCoinBinding;
+import com.example.eneapp.ui.coin.result.PracticeActivity;
 import com.example.eneapp.ui.coin.result.Result100Activity;
 import com.example.eneapp.ui.coin.result.Result10Activity;
 import com.example.eneapp.ui.coin.result.Result50Activity;
@@ -67,6 +68,8 @@ public class CoinFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+
 
 
         sendButton.setOnClickListener(v -> {

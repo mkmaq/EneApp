@@ -19,7 +19,7 @@ public class Result10Activity extends AppCompatActivity {
 
         Button sendButton =findViewById(R.id.send_button);
         // lambda式
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, PracticeActivity.class);
         sendButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // クリック時の処理

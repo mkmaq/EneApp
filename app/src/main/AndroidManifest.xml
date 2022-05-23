@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EneApp"
         tools:targetApi="31">
+
         <activity
             android:name=".ui.coin.result.PracticeActivity"
             android:exported="false" />
-
         <activity
             android:name=".ui.dashboard.electricitysellbuy.ElectricitySellActivity"
             android:exported="false" />
