@@ -58,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_percent="0.05352798" />
 
     <Button
         android:id="@+id/buy1"
@@ -89,10 +89,9 @@
         app:layout_constraintVertical_bias="0.767" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/souhatuden2"
         android:layout_width="379dp"
         android:layout_height="62dp"
-        android:text="今日の発電量：4000kw"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/text_dashboard"
