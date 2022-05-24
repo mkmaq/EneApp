@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.eneapp.MainActivity;
 import com.example.eneapp.R;
 
 public class ElectricitySellActivity extends AppCompatActivity {
@@ -19,6 +22,19 @@ public class ElectricitySellActivity extends AppCompatActivity {
         String text = intent.getStringExtra("buynumber");
         TextView textView = (TextView)this.findViewById(R.id.textView16);
         textView.setText("取引電力：         "+text+"kWh");
+
+        Button sendButton12 =findViewById(R.id.button9);
+        // lambda式
+        Intent intent12 = new Intent(this, MainActivity.class);
+        sendButton12.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // クリック時の処理
+
+                startActivity(intent12);
+            }
+        });
+
+
 
 
     }
