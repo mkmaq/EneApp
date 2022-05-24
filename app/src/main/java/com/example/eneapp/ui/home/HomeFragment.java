@@ -7,12 +7,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.bumptech.glide.Glide;
 import com.example.eneapp.R;
 import com.example.eneapp.databinding.FragmentTopBinding;
 import com.google.firebase.database.DataSnapshot;
@@ -37,6 +39,7 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
 
         final TextView textView = binding.textHome;
+
 //
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -98,6 +101,7 @@ public class HomeFragment extends Fragment {
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
+
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
