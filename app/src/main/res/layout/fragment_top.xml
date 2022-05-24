@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:paddingTop="10dp"
+    android:paddingBottom="80dp"
     tools:context=".ui.home.HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/graphenetop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yojo1" />
 
     <TextView
         android:id="@+id/text_home"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -22,7 +39,7 @@
         android:id="@+id/souhatudenStr"
         android:layout_width="160dp"
         android:layout_height="30dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="44dp"
         android:text="総発電力量"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -35,7 +52,7 @@
         android:id="@+id/souhatuden1"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:textColor="@color/black"
         android:textSize="40dp"
         app:layout_constraintStart_toEndOf="@+id/souhatudenStr"
@@ -45,7 +62,7 @@
         android:id="@+id/syouhiStr"
         android:layout_width="160dp"
         android:layout_height="30dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="60dp"
         android:text="消費電力量"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -58,7 +75,7 @@
         android:id="@+id/syouhi1"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="48dp"
         android:textColor="@color/black"
         android:textSize="40dp"
         app:layout_constraintStart_toEndOf="@+id/syouhiStr"
@@ -68,7 +85,7 @@
         android:id="@+id/yojoStr"
         android:layout_width="160dp"
         android:layout_height="30dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="60dp"
         android:text="余剰電力量"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -81,22 +98,26 @@
         android:id="@+id/yojo1"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="48dp"
         android:textColor="@color/black"
         android:textSize="40dp"
         app:layout_constraintStart_toEndOf="@+id/yojoStr"
         app:layout_constraintTop_toBottomOf="@+id/syouhi1" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="351dp"
-        android:layout_height="225dp"
-        android:layout_marginTop="20dp"
-        android:background="#FFFFFF"
-        android:src="@drawable/tyato"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yojo1" />
+    <!--    <ImageView-->
+<!--        android:id="@+id/imageView3"-->
+<!--        android:layout_width="351dp"-->
+<!--        android:layout_height="225dp"-->
+<!--        android:layout_marginTop="84dp"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:src="@drawable/tyato"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/yojo1" />-->
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
