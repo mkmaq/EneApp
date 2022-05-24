@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#03A9F4"
     tools:context=".ui.dashboard.electricitysellbuy.ElectricitySellActivity">
 
     <TextView
@@ -22,7 +23,7 @@
         android:id="@+id/textbuy"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:text="決済番号："
+        android:text="決済番号：           0000,0001"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
