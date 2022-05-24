@@ -28,5 +28,16 @@ public class Result10Activity extends AppCompatActivity {
             }
         });
 
+        Button sendButton8 =findViewById(R.id.button8);
+        // lambda式
+        Intent intent8 = new Intent(this, MainActivity.class);
+        sendButton8.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // クリック時の処理
+
+                startActivity(intent8);
+            }
+        });
+
     }
 }
