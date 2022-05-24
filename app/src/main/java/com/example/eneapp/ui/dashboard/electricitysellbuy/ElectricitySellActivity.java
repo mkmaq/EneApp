@@ -21,7 +21,7 @@ public class ElectricitySellActivity extends AppCompatActivity {
         Intent intent = this.getIntent();
         String text = intent.getStringExtra("buynumber");
         TextView textView = (TextView)this.findViewById(R.id.textView16);
-        textView.setText("取引電力：         "+text+"kWh");
+        textView.setText("取引電力：     "+text+"kWh");
 
         Button sendButton12 =findViewById(R.id.button9);
         // lambda式
