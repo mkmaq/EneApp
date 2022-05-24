@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#03A9F4"
+    android:background="#def"
     tools:context=".ui.dashboard.electricitysellbuy.ElectricitySellActivity">
 
     <TextView
         android:id="@+id/textboxbuy"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:text="売上："
+        android:text="売上：　　         240コイン"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -35,7 +35,7 @@
         android:id="@+id/textView11"
         android:layout_width="103dp"
         android:layout_height="30dp"
-        android:text="BUY"
+        android:text="SELL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"

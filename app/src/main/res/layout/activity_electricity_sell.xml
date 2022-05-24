@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#def"
     tools:context=".ui.dashboard.electricitysellbuy.ElectricitySellActivity">
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:text="売上："
+        android:text="売上：           2400コイン"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -22,7 +23,7 @@
         android:id="@+id/textView13"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:text="決済番号："
+        android:text="決済番号：     0000,0001"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -34,7 +35,7 @@
         android:id="@+id/textView11"
         android:layout_width="103dp"
         android:layout_height="30dp"
-        android:text="SELL"
+        android:text="BUY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
