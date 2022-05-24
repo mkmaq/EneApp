@@ -22,6 +22,7 @@ import com.example.eneapp.databinding.FragmentElectrictyBinding;
 import com.example.eneapp.databinding.FragmentElectrictyBinding;
 import com.example.eneapp.ui.coin.result.PracticeActivity;
 import com.example.eneapp.ui.dashboard.electricitysellbuy.ElectricitySellActivity;
+import com.example.eneapp.ui.dashboard.electricitysellbuy.EllectricityBuyActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -98,6 +99,23 @@ public class DashboardFragment extends Fragment {
 
             }
         });
+
+        Button sendButton1 = binding.buy1;
+        // lambda式
+        Intent intent1 = new Intent(getActivity(), EllectricityBuyActivity.class);
+        sendButton1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // クリック時の処理
+
+                final EditText editText=binding.buy2;
+                String Value=editText.getText().toString();
+                intent1.putExtra("buy2",Value);
+
+                startActivity(intent1);
+
+            }
+        });
+
         return root;
     }
 

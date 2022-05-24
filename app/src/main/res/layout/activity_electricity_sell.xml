@@ -8,9 +8,9 @@
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="103dp"
+        android:layout_width="300dp"
         android:layout_height="30dp"
-        android:text="sell"
+        android:text="売上："
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -20,9 +20,9 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="103dp"
+        android:layout_width="300dp"
         android:layout_height="30dp"
-        android:text="SELL"
+        android:text="決済番号："
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -44,9 +44,9 @@
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="103dp"
+        android:layout_width="300dp"
         android:layout_height="30dp"
-        android:text="TextView"
+        android:text="残高："
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -56,9 +56,9 @@
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="103dp"
+        android:layout_width="300dp"
         android:layout_height="30dp"
-        android:text="TextView"
+        android:text="取引電力："
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -68,9 +68,9 @@
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="103dp"
+        android:layout_width="300dp"
         android:layout_height="30dp"
-        android:text="TextView"
+        android:text="余剰電力："
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -80,9 +80,9 @@
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="103dp"
+        android:layout_width="300dp"
         android:layout_height="30dp"
-        android:text="TextView"
+        android:text="電力単価：　　　　2.42Rupee/kWh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"

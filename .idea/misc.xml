@@ -9,8 +9,12 @@
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/drawable/ic_electricity.xml" value="0.161" />
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1145" />
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/activity_electricity_sell.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/activity_ellectricity_buy.xml" value="0.264" />
+        <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/activity_main.xml" value="0.23508771929824562" />
+        <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/activity_practice.xml" value="0.15534420289855072" />
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/activity_result.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/activity_result10.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/activity_result100.xml" value="0.25416666666666665" />
@@ -21,6 +25,7 @@
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/fragment_electricty.xml" value="0.264" />
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/fragment_login.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/fragment_notifications.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/fragment_result.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/ctc2022/AndroidStudioProjects/EneApp/app/src/main/res/layout/fragment_sonota.xml" value="0.25" />
