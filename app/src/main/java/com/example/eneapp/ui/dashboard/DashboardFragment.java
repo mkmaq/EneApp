@@ -58,14 +58,6 @@ public class DashboardFragment extends Fragment {
                 long syouhi = (long) value.get("syouhi");
                 long yojo = (long) value.get("yojo");
 
-                //↑テキストビューに入れる
-
-//                TextView souhatudenNum1 = binding.souhatuden2;
-//                souhatudenNum1.setText(value.get("souhatuden") + " kWh");
-//
-//                TextView syouhi1 = binding.syouhi2;
-//                syouhi1.setText(value.get("syouhi") + " kWh");
-
                 TextView yojo1 = binding.yojo2;
                 yojo1.setText(value.get("yojo") + " kWh");
 
