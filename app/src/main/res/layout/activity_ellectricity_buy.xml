@@ -12,6 +12,7 @@
         android:layout_width="300dp"
         android:layout_height="30dp"
         android:text="売上：　　         240コイン"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -23,7 +24,8 @@
         android:id="@+id/textbuy"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:text="決済番号：           0000,0001"
+        android:text="決済番号：           0000,0002"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -35,7 +37,10 @@
         android:id="@+id/textView11"
         android:layout_width="103dp"
         android:layout_height="30dp"
+        android:scrollbarSize="4dp"
         android:text="SELL"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -47,7 +52,8 @@
         android:id="@+id/textView15"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:text="残高："
+        android:text="電力単価：　　2.4Rupee/kWh"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -60,6 +66,7 @@
         android:layout_width="300dp"
         android:layout_height="30dp"
         android:text="取引電力："
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -72,6 +79,7 @@
         android:layout_width="300dp"
         android:layout_height="30dp"
         android:text="余剰電力："
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
@@ -79,15 +87,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.572" />
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:text="電力単価：　　　2.4Rupee/kWh"
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOP"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669" />
+        app:layout_constraintVertical_bias="0.732" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
