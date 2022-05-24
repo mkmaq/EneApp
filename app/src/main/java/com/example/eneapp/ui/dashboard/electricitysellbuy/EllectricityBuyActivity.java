@@ -22,7 +22,7 @@ public class EllectricityBuyActivity extends AppCompatActivity {
         Intent intent = this.getIntent();
         String text = intent.getStringExtra("buy2");
         TextView textView = (TextView)this.findViewById(R.id.textView16);
-        textView.setText("取引電力:           "+text+"kWh");
+        textView.setText("取引電力:     "+text+"kWh");
 
 
 
