@@ -89,16 +89,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="210dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="72dp"
-        android:text="TOP"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
